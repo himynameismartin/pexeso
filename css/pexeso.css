@@ -1,0 +1,43 @@
+@font-face {
+	font-family: "xkcd";
+	src: url('http://antiyawn.com/uploads/Humor-Sans.ttf');
+}
+body {
+	font-family: "xkcd";
+	counter-reset: card-number 0;
+}
+.card {
+	color: #ffffff;
+	background: #000000;
+	font-size: 32px;
+	text-align: center;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+.card-flipped {
+	color: #000000;
+	background: #ffffff;
+}
+.card:before {
+	counter-increment: card-number;
+	content: counter(card-number);
+}
+#response {
+	float: left;
+}
+#action {
+	float: left;
+	margin-left: 25px;
+}
+#card-1 {
+	width: 45%;
+	float: left;
+}
+#card-2 {
+	width: 45%;
+	float: right;
+}
+.clear {
+	clear: both;
+}
