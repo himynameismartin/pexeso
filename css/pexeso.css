@@ -14,6 +14,10 @@ body {
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
+	width: 36px;
+	height: 42px;
+	float: left;
+	margin: 1px;
 }
 .card-flipped {
 	color: #000000;
@@ -23,6 +27,10 @@ body {
 	counter-increment: card-number;
 	content: counter(card-number);
 }
+.card:nth-of-type(n) {transform: rotate(5deg); -moz-transform: rotate(5deg); -webkit-transform: rotate(5deg);}
+.card:nth-of-type(2n) {transform: rotate(-3deg); -moz-transform: rotate(-3deg); -webkit-transform: rotate(-3deg);}
+.card:nth-of-type(3n) {transform: rotate(-1deg); -moz-transform: rotate(-1deg); -webkit-transform: rotate(-1deg);}
+.card:nth-of-type(5n) {transform: rotate(2.5deg); -moz-transform: rotate(2.5deg); -webkit-transform: rotate(2.5deg);}
 #response {
 	float: left;
 }

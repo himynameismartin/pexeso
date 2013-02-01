@@ -65,7 +65,7 @@ $(function() {
 		$.each(['#card-1', '#card-2', '#response'], function(index, selector) {
 			$(selector).html('');
 		});
-		$('td').removeClass('card-flipped');
+		$('.card').removeClass('card-flipped');
 		cardsFlipped = 0;
 	});
 });
